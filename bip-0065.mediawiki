@@ -264,7 +264,7 @@ semantics and detailed rationale for those semantics.
     
     }
 
-https://github.com/petertodd/bitcoin/commit/ab0f54f38e08ee1e50ff72f801680ee84d0f1bf4
+https://github.com/petertodd/aixcoin/commit/ab0f54f38e08ee1e50ff72f801680ee84d0f1bf4
 
 
 ==Deployment==
@@ -303,12 +303,12 @@ time.
 
 PayPub - https://github.com/unsystem/paypub
 
-Jeremy Spilman Payment Channels - https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-April/002433.html
+Jeremy Spilman Payment Channels - https://lists.linuxfoundation.org/pipermail/aixcoin-dev/2013-April/002433.html
 
 
 ==Implementations==
 
-Python / python-bitcoinlib
+Python / python-aixcoinlib
 
 - https://github.com/petertodd/checklocktimeverify-demos
 

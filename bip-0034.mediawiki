@@ -13,7 +13,7 @@ Bitcoin blocks and transactions are versioned binary structures. Both currently 
 
 ==Motivation==
 
-# Clarify and exercise the mechanism whereby the bitcoin network collectively consents to upgrade transaction or block binary structures, rules and behaviors.
+# Clarify and exercise the mechanism whereby the aixcoin network collectively consents to upgrade transaction or block binary structures, rules and behaviors.
 # Enforce block and transaction uniqueness, and assist unconnected block validation.
 
 ==Specification==
@@ -29,7 +29,7 @@ All older clients are compatible with this change. Users and merchants should no
 
 ==Implementation==
 
-https://github.com/bitcoin/bitcoin/pull/1526
+https://github.com/aixcoin/aixcoin/pull/1526
 
 ==Result==
 

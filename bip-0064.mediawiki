@@ -100,4 +100,4 @@ results.
 
 ==Implementation==
 
-https://github.com/bitcoin/bitcoin/pull/4351/files
+https://github.com/aixcoin/aixcoin/pull/4351/files

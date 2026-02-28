@@ -38,5 +38,5 @@ In the long term, continued direct management of this limit is a moral hazard th
 
 ==Implementation==
 
-https://github.com/jgarzik/bitcoin/tree/2015_2mb_blocksize
+https://github.com/jgarzik/aixcoin/tree/2015_2mb_blocksize
 

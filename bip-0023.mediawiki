@@ -288,9 +288,9 @@ What is the purpose of the "hash" transaction list format?
 
 ==Reference Implementation==
 
-* [http://gitorious.org/bitcoin/libblkmaker libblkmaker]
-* [https://gitorious.org/bitcoin/eloipool Eloipool]
-* [https://github.com/bitcoin/bitcoin/pull/936/files bitcoind]
+* [http://gitorious.org/aixcoin/libblkmaker libblkmaker]
+* [https://gitorious.org/aixcoin/eloipool Eloipool]
+* [https://github.com/aixcoin/aixcoin/pull/936/files aixcoind]
 
 ==See Also==
 * [[bip-0022.mediawiki|BIP 22: getblocktemplate - Fundamentals]]

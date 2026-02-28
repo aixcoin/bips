@@ -20,17 +20,17 @@ encapsulating the messages.
 
 ==Specification==
 
-The Media Type (Content-Type in HTML/email headers) for bitcoin
+The Media Type (Content-Type in HTML/email headers) for aixcoin
 protocol messages shall be:
 
 {|
 | Message || Type/Subtype
 |-
-| PaymentRequest || application/bitcoin-paymentrequest
+| PaymentRequest || application/aixcoin-paymentrequest
 |-
-| Payment || application/bitcoin-payment
+| Payment || application/aixcoin-payment
 |-
-| PaymentACK || application/bitcoin-paymentack
+| PaymentACK || application/aixcoin-paymentack
 |}
 
 Payment protocol messages are encoded in binary.
@@ -41,6 +41,6 @@ A web server generating a PaymentRequest message to initiate the
 payment protocol would precede the binary message data with the
 following headers:
 <pre>
-Content-Type: application/bitcoin-paymentrequest
+Content-Type: application/aixcoin-paymentrequest
 Content-Transfer-Encoding: binary
 </pre>

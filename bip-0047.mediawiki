@@ -7,7 +7,7 @@ RECENT CHANGES:
 <pre>
   BIP:     47
   Title:   Reusable Payment Codes for Hierarchical Deterministic Wallets
-  Authors: Justus Ranvier <justus@openbitcoinprivacyproject.org>
+  Authors: Justus Ranvier <justus@openaixcoinprivacyproject.org>
   Status:  Draft
   Type:    Informational
   Created: 2015-04-24
@@ -93,7 +93,7 @@ It is assumed that Alice can easily obtain Bob's payment code via a suitable met
 
 Prior to the first time Alice initiates a transaction to Bob, Alice MUST inform Bob of her payment code via the following procedure:
 
-# Alice constructs a transaction which sends a small quantity of bitcoins to Bob's notification address (notification transaction)
+# Alice constructs a transaction which sends a small quantity of aixcoins to Bob's notification address (notification transaction)
 ## The inputs selected for this transaction MUST NOT be easily associated with Alice's notification address
 # Alice derives a unique shared secret using ECDH:
 ## Alice selects the private key corresponding to the first exposed public key, of the first pubkey-exposing input, of the transaction: <pre>a</pre>
@@ -252,8 +252,8 @@ In order to use Bitmessage notification, the recipient must have a Bitmessage cl
 * [[bip-0032.mediawiki|BIP32 - Hierarchical Deterministic Wallets]]
 * [[bip-0043.mediawiki|BIP43 - Purpose Field for Deterministic Wallets]]
 * [[bip-0044.mediawiki|BIP44 - Multi-Account Hierarchy for Deterministic Wallets]]
-* [[https://bitcoin.org/en/glossary/outpoint|Outpoint]]
+* [[https://aixcoin.org/en/glossary/outpoint|Outpoint]]
 * [[https://github.com/petertodd/dust-b-gone|dust-b-gone]]
-* [[https://en.bitcoin.it/wiki/Base58Check_encoding|Base58Check encoding]]
+* [[https://en.aixcoin.it/wiki/Base58Check_encoding|Base58Check encoding]]
 * [[https://bitmessage.org/bitmessage.pdf|Bitmessage]]
-* [[https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-April/007812.html|Mailing list discussion]]
+* [[https://lists.linuxfoundation.org/pipermail/aixcoin-dev/2015-April/007812.html|Mailing list discussion]]

@@ -35,4 +35,4 @@ Clients must opt-in to the new feature by advertising a protocol version > 60000
 
 ==Implementation==
 
-https://github.com/bitcoin/bitcoin/pull/932/files
+https://github.com/aixcoin/aixcoin/pull/932/files

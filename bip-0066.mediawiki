@@ -128,7 +128,7 @@ The requirement to have signatures that comply strictly with DER has been enforc
 
 ==Implementation==
 
-An implementation for the reference client is available at https://github.com/bitcoin/bitcoin/pull/5713
+An implementation for the reference client is available at https://github.com/aixcoin/aixcoin/pull/5713
 
 ==Acknowledgements==
 

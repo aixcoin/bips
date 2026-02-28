@@ -77,7 +77,7 @@ Examples:
 This BIP replaces BIPs 12 and 17, which propose extensions to the Script system to allow scriptPubKey to outsource its verification.
 It also replaces BIP 16, which is identical in terms of protocol, but suggests a specific implementation and does not deprecate scriptPubKey to maintain protocol consistency.
 
-The Motivation for this BIP (and BIP 13, the pay-to-script-hash address type) is somewhat controversial; several people feel that it is unnecessary, and complex/multisignature transaction types should be supported by simply giving the sender the complete {serialized script}. The author believes that this BIP will minimize the changes needed to all of the supporting infrastructure that has already been created to send funds to a base58-encoded-20-byte bitcoin addresses, allowing merchants and exchanges and other software to start supporting multisignature transactions sooner.
+The Motivation for this BIP (and BIP 13, the pay-to-script-hash address type) is somewhat controversial; several people feel that it is unnecessary, and complex/multisignature transaction types should be supported by simply giving the sender the complete {serialized script}. The author believes that this BIP will minimize the changes needed to all of the supporting infrastructure that has already been created to send funds to a base58-encoded-20-byte aixcoin addresses, allowing merchants and exchanges and other software to start supporting multisignature transactions sooner.
 
 The signature operation counting rules are intended to be easy and quick to implement by statically scanning scriptCheck.
 Bitcoin imposes a maximum-number-of-signature-operations per block to prevent denial-of-service attacks on miners.
@@ -117,7 +117,7 @@ This BIP only allows Bitcoin's Hash160 algorithm, but leaves open the possibilit
 
 ==Reference Implementation==
 
-https://github.com/gavinandresen/bitcoin-git/tree/pay_to_script_hash
+https://github.com/gavinandresen/aixcoin-git/tree/pay_to_script_hash
 
 ==See Also==
 

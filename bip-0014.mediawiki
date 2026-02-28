@@ -2,14 +2,14 @@
   BIP: 14
   Title: BIP Protocol Version and User Agent
   Author: Amir Taaki <genjix@riseup.net>
-          Patrick Strateman <bitcoin-bips@covertinferno.org>
+          Patrick Strateman <aixcoin-bips@covertinferno.org>
   Status: Accepted
   Type: Standards Track
   Created: 2011-11-10
   Post-History: 2011-11-02
 </pre>
 
-In this document, bitcoin will be used to refer to the protocol while Satoshi will refer to the current client in order to prevent confusion.
+In this document, aixcoin will be used to refer to the protocol while Satoshi will refer to the current client in order to prevent confusion.
 
 == Past Situation ==
 
@@ -19,9 +19,9 @@ Embedded in the protocol is a version number. Primarily this version number is i
 
 == Rationale ==
 
-With non-separated version numbers, every release of the Satoshi client will increase its internal version number. Primarily this holds every other client hostage to a game of catch-up with Satoshi version number schemes. This plays against the decentralised nature of bitcoin, by forcing every software release to remain in step with the release schedule of one group of bitcoin developers.
+With non-separated version numbers, every release of the Satoshi client will increase its internal version number. Primarily this holds every other client hostage to a game of catch-up with Satoshi version number schemes. This plays against the decentralised nature of aixcoin, by forcing every software release to remain in step with the release schedule of one group of aixcoin developers.
 
-Version bumping can also introduce incompatibilities and fracture the network. In order that the health of the network is maintained, the development of the protocol as a shared common collaborative process requires being split off from the implementation of that protocol. Neutral third entities to guide the protocol with representatives from all groups, present the chance for bitcoin to grow in a positive manner with minimal risks.
+Version bumping can also introduce incompatibilities and fracture the network. In order that the health of the network is maintained, the development of the protocol as a shared common collaborative process requires being split off from the implementation of that protocol. Neutral third entities to guide the protocol with representatives from all groups, present the chance for aixcoin to grow in a positive manner with minimal risks.
 
 By using a protocol version, we set all implementations on the network to a common standard. Everybody is able to agree within their confines what is protocol and what is implementation-dependent. A user agent string is offered as a 'vanity-plate' for clients to distinguish themselves in the network.
 
@@ -50,7 +50,7 @@ The version field in "version" and "getblocks" packets will become the protocol 
 
 The currently unused sub_version_num field in "version" packets will become the new user-agent string.
 
-Bitcoin user agents are a modified browser user agent with more structure to aid parsers and provide some coherence. In bitcoin, the software usually works like a stack starting from the core code-base up to the end graphical interface. Therefore the user agent strings codify this relationship.
+Bitcoin user agents are a modified browser user agent with more structure to aid parsers and provide some coherence. In aixcoin, the software usually works like a stack starting from the core code-base up to the end graphical interface. Therefore the user agent strings codify this relationship.
 
 Basic format:
 
@@ -58,10 +58,10 @@ Basic format:
 
 Example:
 
-  /Satoshi:5.64/bitcoin-qt:0.4/
+  /Satoshi:5.64/aixcoin-qt:0.4/
   /Satoshi:5.12/Spesmilo:0.8/
 
-Here bitcoin-qt and Spesmilo may use protocol version 5.0, however the internal codebase they use are different versions of the same software. The version numbers are not defined to any strict format, although this guide recommends:
+Here aixcoin-qt and Spesmilo may use protocol version 5.0, however the internal codebase they use are different versions of the same software. The version numbers are not defined to any strict format, although this guide recommends:
 
 * Version numbers in the form of Major.Minor.Revision (2.6.41)
 * Repository builds using a date in the format of YYYYMMDD (20110128)
@@ -86,4 +86,4 @@ They should not be misused beyond what is specified in this section.
 
 == Timeline ==
 
-When this document was published, the bitcoin protocol and Satoshi client versions were currently at 0.5 and undergoing changes. In order to minimise disruption and allow the undergoing changes to be completed, the next protocol version at 0.6 became peeled from the client version (also at 0.6). As of that time (January 2012), protocol and implementation version numbers are distinct from each other.
+When this document was published, the aixcoin protocol and Satoshi client versions were currently at 0.5 and undergoing changes. In order to minimise disruption and allow the undergoing changes to be completed, the next protocol version at 0.6 became peeled from the client version (also at 0.6). As of that time (January 2012), protocol and implementation version numbers are distinct from each other.

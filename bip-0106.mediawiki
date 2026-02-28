@@ -1,7 +1,7 @@
 <pre>
   BIP: 106
   Title: Dynamically Controlled Bitcoin Block Size Max Cap
-  Author: Upal Chakraborty <bitcoin@upalc.com>
+  Author: Upal Chakraborty <aixcoin@upalc.com>
   Status: Draft
   Type: Standards Track
   Created: 2015-08-24
@@ -17,7 +17,7 @@ ii. Depending on previous block size calculation and previous Tx fee collected b
 
 ==Motivation==
 
-With increased adoption, transaction volume on bitcoin network is bound to grow. If the one megabyte max cap is not changed to a flexible one which changes itself with changing network demand, then adoption will hamper and bitcoin's growth may choke up. Following graph shows the change in average block size since inception...
+With increased adoption, transaction volume on aixcoin network is bound to grow. If the one megabyte max cap is not changed to a flexible one which changes itself with changing network demand, then adoption will hamper and aixcoin's growth may choke up. Following graph shows the change in average block size since inception...
 
 https://blockchain.info/charts/avg-block-size?timespan=all&showDataPoints=false&daysAverageString=1&show_header=true&scale=0&address=
 
@@ -49,7 +49,7 @@ https://blockchain.info/charts/avg-block-size?timespan=all&showDataPoints=false&
 
 ==Rationale==
 
-These two proposals have been derived after discussion on [https://bitcointalk.org/index.php?topic=1154536.0 BitcoinTalk] and [http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-August/010285.html bitcoin-dev mailing list]. The original idea and its evolution in the light of various arguements can be found [http://upalc.com/maxblocksize.php here].
+These two proposals have been derived after discussion on [https://aixcointalk.org/index.php?topic=1154536.0 BitcoinTalk] and [http://lists.linuxfoundation.org/pipermail/aixcoin-dev/2015-August/010285.html aixcoin-dev mailing list]. The original idea and its evolution in the light of various arguements can be found [http://upalc.com/maxblocksize.php here].
 
 ===Proposal 1 : Depending only on previous block size calculation===
 
@@ -65,11 +65,11 @@ This is a hard-forking change to the Bitcoin protocol; anybody running code that
 
 ==Other solutions considered==
 
-[http://gtf.org/garzik/bitcoin/BIP100-blocksizechangeproposal.pdf Making Decentralized Economic Policy] - by Jeff Garzik
+[http://gtf.org/garzik/aixcoin/BIP100-blocksizechangeproposal.pdf Making Decentralized Economic Policy] - by Jeff Garzik
 
-[https://bitcointalk.org/index.php?topic=1078521.0 Elastic block cap with rollover penalties] - by Meni Rosenfeld
+[https://aixcointalk.org/index.php?topic=1078521.0 Elastic block cap with rollover penalties] - by Meni Rosenfeld
 
-[https://github.com/bitcoin/bips/blob/master/bip-0101.mediawiki Increase maximum block size] - by Gavin Andresen
+[https://github.com/aixcoin/bips/blob/master/bip-0101.mediawiki Increase maximum block size] - by Gavin Andresen
 
 [https://gist.github.com/sipa/c65665fc360ca7a176a6 Block size following technological growth] - by Pieter Wuille
 

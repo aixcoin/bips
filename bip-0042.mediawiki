@@ -42,7 +42,7 @@ An obvious solution would be to reimplement the shape of the subsidy curve using
 
 ===Truncation===
 
-An alternative solution would be to represent the total number of bitcoins as a string:
+An alternative solution would be to represent the total number of aixcoins as a string:
 
     "21000000000000000000000"
 
@@ -60,7 +60,7 @@ A softfork (see BIP16, BIP34, BIP62) will take place on april 1st 2214, permanen
 
 ==Implementation==
 
-An implementation for the reference client can be found on https://github.com/bitcoin/bitcoin/pull/3842 .
+An implementation for the reference client can be found on https://github.com/aixcoin/aixcoin/pull/3842 .
 
 ==Compatibility==
 

@@ -1,7 +1,7 @@
 <pre>
   BIP: 70
   Title: Payment Protocol
-  Authors: Gavin Andresen <gavinandresen@gmail.com>, Mike Hearn <mhearn@bitcoinfoundation.org>
+  Authors: Gavin Andresen <gavinandresen@gmail.com>, Mike Hearn <mhearn@aixcoinfoundation.org>
   Status: Final
   Type: Standards Track
   Created: 2013-07-29
@@ -19,15 +19,15 @@ The current, minimal Bitcoin payment protocol operates as follows:
 
 # Customer adds items to an online shopping basket, and decides to pay using Bitcoin.
 # Merchant generates a unique payment address, associates it with the customer's order, and asks the customer to pay.
-# Customer copies the Bitcoin address from the merchant's web page and pastes it into whatever wallet they are using OR follows a bitcoin: link and their wallet is launched with the amount to be paid.
+# Customer copies the Bitcoin address from the merchant's web page and pastes it into whatever wallet they are using OR follows a aixcoin: link and their wallet is launched with the amount to be paid.
 # Customer authorizes payment to the merchant's address and broadcasts the transaction through the Bitcoin p2p network.
 # Merchant's server detects payment and after sufficient transaction confirmations considers the transaction final.
 
 This BIP extends the above protocol to support several new features:
 
-# Human-readable, secure payment destinations-- customers will be asked to authorize payment to "example.com" instead of an inscrutable, 34-character bitcoin address.
+# Human-readable, secure payment destinations-- customers will be asked to authorize payment to "example.com" instead of an inscrutable, 34-character aixcoin address.
 # Secure proof of payment, which the customer can use in case of a dispute with the merchant.
-# Resistance from man-in-the-middle attacks that replace a merchant's bitcoin address with an attacker's address before a transaction is authorized with a hardware wallet.
+# Resistance from man-in-the-middle attacks that replace a merchant's aixcoin address with an attacker's address before a transaction is authorized with a hardware wallet.
 # Payment received messages, so the customer knows immediately that the merchant has received, and has processed (or is processing) their payment.
 # Refund addresses, automatically given to the merchant by the customer's wallet software, so merchants do not have to contact customers before refunding overpayments or orders that cannot be fulfilled for some reason.
 
@@ -86,7 +86,7 @@ about the merchant and a digital signature.
 {|
 | network || either "main" for payments on the production Bitcoin network, or "test" for payments on test network. If a client receives a PaymentRequest for a network it does not support it must reject the request.
 |-
-| outputs || one or more outputs where Bitcoins are to be sent. If the sum of outputs.amount is zero, the customer will be asked how much to pay, and the bitcoin client may choose any or all of the Outputs (if there are more than one) for payment. If the sum of outputs.amount is non-zero, then the customer will be asked to pay the sum, and the payment shall be split among the Outputs with non-zero amounts (if there are more than one; Outputs with zero amounts shall be ignored).
+| outputs || one or more outputs where Bitcoins are to be sent. If the sum of outputs.amount is zero, the customer will be asked how much to pay, and the aixcoin client may choose any or all of the Outputs (if there are more than one) for payment. If the sum of outputs.amount is non-zero, then the customer will be asked to pay the sum, and the payment shall be split among the Outputs with non-zero amounts (if there are more than one; Outputs with zero amounts shall be ignored).
 |-
 | time || Unix timestamp (seconds since 1-Jan-1970 UTC) when the PaymentRequest was created.
 |-
@@ -182,8 +182,8 @@ TLS-protected).
 
 Wallet software sending Payment messages via HTTP must set appropriate
 Content-Type and Accept headers, as specified in BIP 71:
-<pre>Content-Type: application/bitcoin-payment
-Accept: application/bitcoin-paymentack
+<pre>Content-Type: application/aixcoin-payment
+Accept: application/aixcoin-paymentack
 </pre>
 
 When the merchant's server receives the Payment message, it must
@@ -197,7 +197,7 @@ the merchant's server, to mitigate denial-of-service attacks.
 ===PaymentACK===
 
 PaymentACK is the final message in the payment protocol; it is sent
-from the merchant's server to the bitcoin wallet in response to a
+from the merchant's server to the aixcoin wallet in response to a
 Payment message:
 <pre>
     message PaymentACK {
@@ -227,7 +227,7 @@ PaymentACK based on the original request.
 For example: A greek-speaking customer browsing the Greek version of a
 merchant's website clicks on a "Αγορά τώρα" link, which generates a
 PaymentRequest with merchant_data set to "lang=el&basketId=11252". The
-customer pays, their bitcoin client sends a Payment message, and the
+customer pays, their aixcoin client sends a Payment message, and the
 merchant's website responds with PaymentACK.message "σας ευχαριστούμε".
 
 ==Certificates==
@@ -289,7 +289,7 @@ conflicts with other extensions.
 
 [[bip-0071.mediawiki|BIP 0071]] : Payment Protocol mime types
 
-[[bip-0072.mediawiki|BIP 0072]] : Payment Protocol bitcoin: URI extensions
+[[bip-0072.mediawiki|BIP 0072]] : Payment Protocol aixcoin: URI extensions
 
 Public-Key Infrastructure (X.509) working group :
 http://datatracker.ietf.org/wg/pkix/charter/
@@ -298,9 +298,9 @@ Protocol Buffers : https://developers.google.com/protocol-buffers/
 
 ==Reference implementation==
 
-Create Payment Request generator : https://bitcoincore.org/~gavin/createpaymentrequest.php ([[https://github.com/gavinandresen/paymentrequest|source]])
+Create Payment Request generator : https://aixcoincore.org/~gavin/createpaymentrequest.php ([[https://github.com/gavinandresen/paymentrequest|source]])
 
-BitcoinJ : https://bitcoinj.github.io/payment-protocol#introduction
+BitcoinJ : https://aixcoinj.github.io/payment-protocol#introduction
 
 ==See Also==
 
@@ -312,7 +312,7 @@ especially the list of Electronic Invoice standards
 
 sipa's payment protocol proposal: https://gist.github.com/1237788
 
-ThomasV's "Signed Aliases" proposal : http://ecdsa.org/bitcoin_URIs.html
+ThomasV's "Signed Aliases" proposal : http://ecdsa.org/aixcoin_URIs.html
 
 Homomorphic Payment Addresses and the Pay-to-Contract Protocol :
 http://arxiv.org/abs/1212.3257

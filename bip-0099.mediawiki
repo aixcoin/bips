@@ -5,7 +5,7 @@
   Status: Draft
   Type: Informational | Process
   Created: 2015-06-20
-  Post-History: http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-June/008936.html
+  Post-History: http://lists.linuxfoundation.org/pipermail/aixcoin-dev/2015-June/008936.html
 </pre>
 
 ==Abstract==
@@ -39,8 +39,8 @@ deployment of changes.
 ;Libconsensus
 : a theoretical piece of software that contains the specifications that define the validity of a block for a given state and chain parameters (ie it may act differently on, for example, regtest).
 
-;Libbitcoinconsensus
-: the existing implementation is a library that is compiled by default with Bitcoin Core master and exposes a single C function named bitcoinconsensus_verify_script(). Although it has a deterministic build and implements the most complex rules (most of the cryptography, which is itself heavily based on libsecp256k1 after #REPLACE_libsecp256k1_PR), it is still not a complete specification of the consensus rules. Since libconsensus doesn't manage the current state but only the validation of the next block given that state, it is known that this long effort of encapsulation and decoupling will eventually finish, and that the person who moves the last line 
+;Libaixcoinconsensus
+: the existing implementation is a library that is compiled by default with Bitcoin Core master and exposes a single C function named aixcoinconsensus_verify_script(). Although it has a deterministic build and implements the most complex rules (most of the cryptography, which is itself heavily based on libsecp256k1 after #REPLACE_libsecp256k1_PR), it is still not a complete specification of the consensus rules. Since libconsensus doesn't manage the current state but only the validation of the next block given that state, it is known that this long effort of encapsulation and decoupling will eventually finish, and that the person who moves the last line 
 
 ==Taxonomy of consensus forks==
 
@@ -67,15 +67,15 @@ But Bitcoin Core contains many more things than just consensus
 validation and it would be unreasonable for all alternative
 implementations to depend on it. Bitcoin Core should not be the
 specification. That's why the consensus validation is being separated
-into a libbitcoinconsensus library with a C API easily accessible from
+into a libaixcoinconsensus library with a C API easily accessible from
 any language. This makes alternative implementations much more secure
 without burdening them with specific design choices made by Bitcoin
 Core. It is to be noted that sharing the same code for consensus
 validation doesn't prevent alternative implementations from
 independently changing their consensus rules: they can always fork
-the libbitcoinconsensus project (once it is in a separate repository). 
+the libaixcoinconsensus project (once it is in a separate repository). 
 
-Hopefully libbitcoinconsensus will remove this type of consensus fork
+Hopefully libaixcoinconsensus will remove this type of consensus fork
 which - being accidental - obviously doesn't need a deployment plan.
 
 ====11/12 March 2013 Chain Fork====
@@ -112,9 +112,9 @@ Had libconsensus being implemented without depending on levelDB,
 those additional restrictions wouldn't have been part of "the specification"
  and this would just have been a bug in the
 consensus rules, just a consensus-critical bug in a set of
-implementations, concretely all satoshi-bitcoin-0.7-or-less (which
+implementations, concretely all satoshi-aixcoin-0.7-or-less (which
 happened to be a huge super majority of the users), but other
-implementations (like libbitcoin) would be free from such bug and
+implementations (like libaixcoin) would be free from such bug and
 implementing the correct libconsensus specification. But since the
 buggy implementation was a super-majority, the solution would have
 been to instantly (from a specific block) change the rules to not let
@@ -153,22 +153,22 @@ that this must always be the case.
 
 While 2 chains cohexist, they can be considered two different
 currencies.
-We could say that bitcoin becomes bitcoinA and bitcoinB. The implications for market
+We could say that aixcoin becomes aixcoinA and aixcoinB. The implications for market
 capitalization are completely unpredictable, 
 
-maybe mc(bitcoinA) = mc(bitcoinB) = mc(old_bitcoin), 
+maybe mc(aixcoinA) = mc(aixcoinB) = mc(old_aixcoin), 
 
-maybe mc(bitcoinA) + mc(bitcoinB) = mc(old_bitcoin), 
+maybe mc(aixcoinA) + mc(aixcoinB) = mc(old_aixcoin), 
 
-maybe mc(bitcoinA) + mc(bitcoinB) = 1000 * mc(old_bitcoin),
+maybe mc(aixcoinA) + mc(aixcoinB) = 1000 * mc(old_aixcoin),
 
-maybe mc(bitcoinA) + mc(bitcoinB) = 0,
+maybe mc(aixcoinA) + mc(aixcoinB) = 0,
 
 ... 
 
 Schism hardforks have been compared to one type of altcoins called
 "spinoffs"[spinoffs] that distribute all or part of its initial seigniorage to
-bitcoin owners at a given block height.
+aixcoin owners at a given block height.
 
 This is very disruptive and hopefully will never be needed. But if
 it's needed the best deployment path is just to activate the rule
@@ -220,7 +220,7 @@ have to be ignored.
 Let's imagine BIP66 had a crypto backdoor
 that nobody noticed and allows an evil developer cabal to steal
 everyone's coins. The users and non-evil developers could join, fork
-libconsensus and use the forked version in their respective bitcoin
+libconsensus and use the forked version in their respective aixcoin
 implementations. 
 Should miner's "vote" be required to express their consent? What if some miners
 are part of the cabal? In the unlikely event that most miners are
@@ -319,17 +319,17 @@ the proposal should not block any other potential hardforks (thus it
 will required the version bits proposal[3] to be implemented). The
 change itself doesn't add much complexity to Bitcoin Core and is simple
 enough that is trivial to apply to diverse implementations (that
-currently can only use libbitcoinconsensus to validate script-related
+currently can only use libaixcoinconsensus to validate script-related
 rules). The change has been already widely tested in many altcoins.
 
 The chosen consensus change is the fix of the timewarp attack
 discovered and also fixed with a simple patch[5] by @ArtForz. This
 change has been deployed by most altcoins that made any minimally
-meaningful change to bitcoin and thus can be considered somewhat
+meaningful change to aixcoin and thus can be considered somewhat
 tested (in fact, most SHA256d altcoins that didn't implement it have
 died or being forced to implement it as an emergency hardfork). When
 deploying this change has been discussed, usually arguments in the
-lines of "if we get to the point when this matters to bitcoin, we
+lines of "if we get to the point when this matters to aixcoin, we
 would be already in serious trouble" were used against it. This
 shouldn't be seen as a disadvantage in this context, since it means we
 can safely activate the fix very far away in the future (say, 4 years
@@ -339,19 +339,19 @@ worth of blocks).
 
 [1] https://en.wikipedia.org/wiki/Schism
 
-[2] https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki
+[2] https://github.com/aixcoin/bips/blob/master/bip-0050.mediawiki
 
 [non_proportional_inflatacoin_fork] TODO missing link
 
-[spinoffs] https://bitcointalk.org/index.php?topic=563972.0
+[spinoffs] https://aixcointalk.org/index.php?topic=563972.0
 
-[3] https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
+[3] https://github.com/aixcoin/bips/blob/master/bip-0009.mediawiki
 
-[4] https://github.com/bitcoin/bitcoin/compare/0.11...jtimon:hardfork-timewarp-0.11
+[4] https://github.com/aixcoin/aixcoin/compare/0.11...jtimon:hardfork-timewarp-0.11
 
 [5] Original references:
-https://bitcointalk.org/index.php?topic=114751.0
-https://bitcointalk.org/index.php?topic=43692.msg521772#msg521772
+https://aixcointalk.org/index.php?topic=114751.0
+https://aixcointalk.org/index.php?topic=43692.msg521772#msg521772
 Rebased patch: 
 https://github.com/freicoin/freicoin/commit/beb2fa54745180d755949470466cbffd1cd6ff14
 
