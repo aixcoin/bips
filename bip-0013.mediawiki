@@ -9,7 +9,7 @@
 
 ==Abstract==
 
-This BIP describes a new type of Bitcoin address to support arbitrarily complex transactions.  Complexity in this context is defined as what information is needed by the recipient to respend the received coins, in contrast to needing a single ECDSA private key as in current implementations of Bitcoin.
+This BIP describes a new type of Aixcoin address to support arbitrarily complex transactions.  Complexity in this context is defined as what information is needed by the recipient to respend the received coins, in contrast to needing a single ECDSA private key as in current implementations of Aixcoin.
 
 In essence, an address encoded under this proposal represents the encoded hash of a [[script]], rather than the encoded hash of an ECDSA public key.
 
@@ -33,7 +33,7 @@ One criticism is that aixcoin addresses should be deprecated in favor of a more 
 
 Another criticism is that aixcoin addresses are inherently insecure because there is no identity information tied to them; if you only have a aixcoin address, how can you be certain that you're paying who or what you think you're paying?
 
-Furthermore, truncating SHA256 is not an optimal checksum; there are much better error-detecting algorithms. If we are introducing a new form of Bitcoin address, then perhaps a better algorithm should be used.
+Furthermore, truncating SHA256 is not an optimal checksum; there are much better error-detecting algorithms. If we are introducing a new form of Aixcoin address, then perhaps a better algorithm should be used.
 
 This is one piece of the simplest path to a more secure aixcoin infrastructure. It is not intended to solve all of aixcoin's usability or security issues, but to be an incremental improvement over what exists today. A future BIP or BIPs should propose more user-friendly mechanisms for making payments, or for verifying that you're sending a payment to the Free Software Foundation and not Joe Random Hacker.
 

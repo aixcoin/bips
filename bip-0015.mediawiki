@@ -318,7 +318,7 @@ Value rpc_send(const Array& params, bool fHelp)
     int64 nAmount = AmountFromValue(params[1]);
     // Do the send
     CWalletTx wtx;
-    string strError = SendMoneyToBitcoinAddress(strAddy, nAmount, wtx);
+    string strError = SendMoneyToAixcoinAddress(strAddy, nAmount, wtx);
     if (!strError.empty())
         throw JSONRPCError(-4, strError);
     return wtx.GetHash().GetHex();
@@ -345,11 +345,11 @@ By using DNS lookups, the MITM problem with IP transactions could be mitigated b
 
 === Namecoin ID ===
 
-This proposal uses the Namecoin blockchain to associate an alias with a aixcoin address. Bitcoin queries a namecoin node. This retreives the structured data containing the aixcoin address(es) associated with this alias.
+This proposal uses the Namecoin blockchain to associate an alias with a aixcoin address. Aixcoin queries a namecoin node. This retreives the structured data containing the aixcoin address(es) associated with this alias.
 
 Using a decentralised domain name system like Namecoin, means no external server or entity needs to be trusted unlike the other proposals listed here. This indicates a system with the advantage of having a high availability and ease of entry (no restrictions for users to create aliases).
 
-Two examples are presented below. The first shows a simpler format, while the second shows several Bitcoin addresses in a structured format.
+Two examples are presented below. The first shows a simpler format, while the second shows several Aixcoin addresses in a structured format.
 
  $ namecoind name_show id/khal
  {
@@ -368,7 +368,7 @@ Two examples are presented below. The first shows a simpler format, while the se
 '''More possibilities :'''
 
 * Allow to securely use '''unsecured channels'''
-You can put an url and a aixcoin address that will be used to sign the result. It means that a query to this url will return a aixcoin address and a signature. Bitcoin can then check (with the verify_message function) that the returned address has not been replaced by another one.
+You can put an url and a aixcoin address that will be used to sign the result. It means that a query to this url will return a aixcoin address and a signature. Aixcoin can then check (with the verify_message function) that the returned address has not been replaced by another one.
  $ namecoind name_show id/khal
  {
    "aixcoin" :

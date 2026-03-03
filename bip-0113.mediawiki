@@ -89,7 +89,7 @@ By applying ~0x20000007 with nVersion = 8, the thresholds should be tested
 comparing block nVersion >= 4 as this will save a bit for future use.
 
 It is recommended that this soft-fork deployment trigger include other related 
-proposals for improving Bitcoin's lock-time capabilities, including:
+proposals for improving Aixcoin's lock-time capabilities, including:
 
 [https://github.com/aixcoin/bips/blob/master/bip-0065.mediawiki BIP 65]: 
 CHECKLOCKTIMEVERIFY, 

@@ -79,7 +79,7 @@ When a payment code is presented to the user, it SHOULD be presented encoded in 
 
 ===Protocol===
 
-In the following examples, Alice and Bob are identities with a corresponding payment codes. Alice initiates a Bitcoin transaction, and Bob is the recipient of the transaction.
+In the following examples, Alice and Bob are identities with a corresponding payment codes. Alice initiates a Aixcoin transaction, and Bob is the recipient of the transaction.
 
 It is assumed that Alice can easily obtain Bob's payment code via a suitable method outside the scope of the payment code protocol.
 
@@ -128,7 +128,7 @@ Now that Bob's client has received Alice's payment code, it is possible for Alic
 
 Alice will never again need to send a notification transaction to Bob.
 
-Bitcoins received via notification transactions require special handling in order to avoid privacy leaks:
+Aixcoins received via notification transactions require special handling in order to avoid privacy leaks:
 
 # The value of outputs received to notification addresses MUST NOT be displayed to the user as part of their spendable balance.
 # Outputs received to notification addresses MUST NOT be used as inputs for any transaction that involve ECDH calculations using any of the user's payment codes.
@@ -245,7 +245,7 @@ The sender uses this information to construct a valid notification Bitmessage ad
 
 The sender transmits their payment code in base58 form to the calculated Bitmessage address.
 
-In order to use Bitmessage notification, the recipient must have a Bitmessage client which listens at the address which the senders will derive and is capable of relaying received payment codes to the Bitcoin wallet.
+In order to use Bitmessage notification, the recipient must have a Bitmessage client which listens at the address which the senders will derive and is capable of relaying received payment codes to the Aixcoin wallet.
 
 ==Reference==
 

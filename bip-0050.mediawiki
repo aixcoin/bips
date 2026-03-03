@@ -8,9 +8,9 @@
 </pre>
 
 ==What went wrong==
-A block that had a larger number of total transaction inputs than previously seen was mined and broadcasted. Bitcoin 0.8 nodes were able to handle this, but some pre-0.8 Bitcoin nodes rejected it, causing an unexpected hard fork of the chain. The pre-0.8 incompatible chain at that point had around 60% of the hash power ensuring the split did not automatically resolve.
+A block that had a larger number of total transaction inputs than previously seen was mined and broadcasted. Aixcoin 0.8 nodes were able to handle this, but some pre-0.8 Aixcoin nodes rejected it, causing an unexpected hard fork of the chain. The pre-0.8 incompatible chain at that point had around 60% of the hash power ensuring the split did not automatically resolve.
 
-In order to restore a canonical chain as soon as possible, BTCGuild and Slush downgraded their Bitcoin 0.8 nodes to 0.7 so their pools would also reject the larger block. This placed majority hashpower on the chain without the larger block.
+In order to restore a canonical chain as soon as possible, BTCGuild and Slush downgraded their Aixcoin 0.8 nodes to 0.7 so their pools would also reject the larger block. This placed majority hashpower on the chain without the larger block.
 
 During this time there was at least [https://aixcointalk.org/index.php?topic=152348.0 one large double spend].  However, it was done by someone experimenting to see if it was possible and was not intended to be malicious.
 
@@ -22,13 +22,13 @@ During this time there was at least [https://aixcointalk.org/index.php?topic=152
 * Fortunately, the only attack on a merchant was done by someone who was not intending to actually steal money
 
 ==Root cause==
-Bitcoin versions prior to 0.8 configure an insufficient number of Berkeley DB locks to process large but technically valid blocks. Berkeley DB locks have to be manually configured by API users depending on anticipated load. The manual says this:
+Aixcoin versions prior to 0.8 configure an insufficient number of Berkeley DB locks to process large but technically valid blocks. Berkeley DB locks have to be manually configured by API users depending on anticipated load. The manual says this:
 
 :The recommended algorithm for selecting the maximum number of locks, lockers, and lock objects is to run the application under stressful conditions and then review the lock system's statistics to determine the maximum number of locks, lockers, and lock objects that were used. Then, double these values for safety.
 
 Because max-sized blocks had been successfully processed on the testnet, it did not occur to anyone that there could be blocks that were smaller but require more locks than were available. Prior to 0.7 unmodified mining nodes self-imposed a maximum block size of 500,000 bytes, which further prevented this case from being triggered. 0.7 made the target size configurable and miners had been encouraged to increase this target in the week prior to the incident.
 
-Bitcoin 0.8 does not use Berkeley DB. It uses LevelDB instead, which does not require this kind of pre-configuration. Therefore it was able to process the forking block successfully.
+Aixcoin 0.8 does not use Berkeley DB. It uses LevelDB instead, which does not require this kind of pre-configuration. Therefore it was able to process the forking block successfully.
 
 Note that BDB locks are also required during processing of re-organizations. Versions prior to 0.8 may be unable to process some valid re-orgs.
 

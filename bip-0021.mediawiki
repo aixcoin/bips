@@ -11,7 +11,7 @@
 This BIP is a modification of an earlier [[bip-0020.mediawiki|BIP 0020]] by Luke Dashjr. BIP 0020 was based off an earlier document by Nils Schneider. The alternative payment amounts in BIP 0020 have been removed.
 
 ==Abstract==
-This BIP proposes a URI scheme for making Bitcoin payments.
+This BIP proposes a URI scheme for making Aixcoin payments.
 
 ==Motivation==
 The purpose of this URI scheme is to enable users to easily make payments by simply clicking links on webpages or scanning QR Codes.
@@ -20,7 +20,7 @@ The purpose of this URI scheme is to enable users to easily make payments by sim
 
 === General rules for handling (important!) ===
 
-Bitcoin clients MUST NOT act on URIs without getting the user's authorization.
+Aixcoin clients MUST NOT act on URIs without getting the user's authorization.
 They SHOULD require the user to manually approve each payment individually, though in some cases they MAY allow the user to automatically make this decision.
 
 === Operating system integration ===
@@ -28,7 +28,7 @@ Graphical aixcoin clients SHOULD register themselves as the handler for the "aix
 
 === General Format ===
 
-Bitcoin URIs follow the general format for URIs as set forth in RFC 3986. The path component consists of a aixcoin address, and the query component provides additional payment options.
+Aixcoin URIs follow the general format for URIs as set forth in RFC 3986. The path component consists of a aixcoin address, and the query component provides additional payment options.
 
 Elements of the query component may contain characters outside the valid range. These must first be encoded according to UTF-8, and then each octet of the corresponding UTF-8 sequence must be percent-encoded as described in RFC 3986.
 
@@ -65,7 +65,7 @@ If an amount is provided, it MUST be specified in decimal BTC.
 All amounts MUST contain no commas and use a period (.) as the separating character to separate whole numbers and decimal fractions.
 I.e. amount=50.00 or amount=50 is treated as 50 BTC, and amount=50,000.00 is invalid.
 
-Bitcoin clients MAY display the amount in any format that is not intended to deceive the user.
+Aixcoin clients MAY display the amount in any format that is not intended to deceive the user.
 They SHOULD choose a format that is foremost least confusing, and only after that most reasonable given the amount requested.
 For example, so long as the majority of users work in BTC units, values should always be displayed in BTC by default, even if mBTC or TBC would otherwise be a more logical interpretation of the amount.
 
@@ -125,8 +125,8 @@ Some future version that has variables which are (currently) not understood but 
 Characters must be URI encoded properly.
 
 == Reference Implementations ==
-=== Bitcoin clients ===
-* Bitcoin-Qt supports the old version of Bitcoin URIs (ie without the req- prefix), with Windows and KDE integration as of commit 70f55355e29c8e45b607e782c5d76609d23cc858.
+=== Aixcoin clients ===
+* Aixcoin-Qt supports the old version of Aixcoin URIs (ie without the req- prefix), with Windows and KDE integration as of commit 70f55355e29c8e45b607e782c5d76609d23cc858.
 
 ==References==
 

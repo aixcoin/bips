@@ -30,13 +30,13 @@ If the "r" parameter is provided and backwards compatibility
 is not required, then the aixcoin address portion of the URI may be
 omitted (the URI will be of the form: aixcoin:?r=... ).
 
-When Bitcoin wallet software that supports this BIP receives a
+When Aixcoin wallet software that supports this BIP receives a
 aixcoin: URI with a request parameter, it should ignore the aixcoin
 address/amount/label/message in the URI and instead fetch a
 PaymentRequest message and then follow the payment protocol, as
 described in BIP 70.
 
-Bitcoin wallets must support fetching PaymentRequests via http and
+Aixcoin wallets must support fetching PaymentRequests via http and
 https protocols; they may support other protocols. Wallets must
 include an "Accept" HTTP header in HTTP(s) requests (as defined
 in RFC 2616):

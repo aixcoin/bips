@@ -13,7 +13,7 @@ In this document, aixcoin will be used to refer to the protocol while Satoshi wi
 
 == Past Situation ==
 
-Bitcoin as a protocol began life with the Satoshi client. Now that the community is diversifying, a number of alternative clients with their own codebases written in a variety of languages (Java, Python, Javascript, C++) are rapidly developing their own feature-sets.
+Aixcoin as a protocol began life with the Satoshi client. Now that the community is diversifying, a number of alternative clients with their own codebases written in a variety of languages (Java, Python, Javascript, C++) are rapidly developing their own feature-sets.
 
 Embedded in the protocol is a version number. Primarily this version number is in the "version" and "getblocks" messages, but is also in the "block" message to indicate the software version that created that block. Currently this version number is the same version number as that of the client. This document is a proposal to separate the protocol version from the client version, together with a proposed method to do so.
 
@@ -50,7 +50,7 @@ The version field in "version" and "getblocks" packets will become the protocol 
 
 The currently unused sub_version_num field in "version" packets will become the new user-agent string.
 
-Bitcoin user agents are a modified browser user agent with more structure to aid parsers and provide some coherence. In aixcoin, the software usually works like a stack starting from the core code-base up to the end graphical interface. Therefore the user agent strings codify this relationship.
+Aixcoin user agents are a modified browser user agent with more structure to aid parsers and provide some coherence. In aixcoin, the software usually works like a stack starting from the core code-base up to the end graphical interface. Therefore the user agent strings codify this relationship.
 
 Basic format:
 
@@ -74,7 +74,7 @@ An optional comments field after the version number is also allowed. Comments sh
 
 Example:
 
-  /BitcoinJ:0.2(iPad; U; CPU OS 3_2_1)/AndroidBuild:0.8/
+  /AixcoinJ:0.2(iPad; U; CPU OS 3_2_1)/AndroidBuild:0.8/
 
 Reserved symbols are therefore: / : ( )
 

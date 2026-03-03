@@ -7,7 +7,7 @@ If you can help test, please edit this page to sign-off on it.
 
 |- style="color:green;"
 | &#x2713;
-| Run BIP-16-capable Bitcoin 0.6 on testnet and main net<br />
+| Run BIP-16-capable Aixcoin 0.6 on testnet and main net<br />
 Send coins using GUI, RCP sendtoaddress, and RCP sendmany commands<br />
 Result: coins sent in all cases
 | Gavin Andresen
@@ -67,20 +67,20 @@ Result: balance decreases, listtransactions displays correct information<br />
 
 |- style="color:green;"
 | &#x2713;
-| Run 0.6 Bitcoin-Qt GUI on one of the test wallets from above<br />
+| Run 0.6 Aixcoin-Qt GUI on one of the test wallets from above<br />
 Result: balance and transactions displayed correctly
 | Gavin Andresen
 
 |- style="color:orange;"
 | &#x2713;
-| Run BIP-16-capable backport Bitcoin 0.3.19 through 0.5.1 on testnet and main net<br />
+| Run BIP-16-capable backport Aixcoin 0.3.19 through 0.5.1 on testnet and main net<br />
 Send coins using GUI, RCP sendtoaddress, and RCP sendmany commands<br />
 Result: coins sent in all cases
 | Gavin Andresen (tested 0.3.19, 0.3.24 and 0.5.1)
 
 |- style="color:green;"
 | &#x2713;
-| Run BIP-16-capable Bitcoin 0.6.0 on testnet<br />
+| Run BIP-16-capable Aixcoin 0.6.0 on testnet<br />
 Mine coins using built-in miner<br />
 Result: blocks accepted, show up on blockexplorer.com/testnet<br />
 Result: mined blocks' coinbase contains /P2SH/ string
@@ -88,7 +88,7 @@ Result: mined blocks' coinbase contains /P2SH/ string
 
 |- style="color:green;"
 | &#x2713;
-| Run BIP-16-capable Bitcoin 0.6.0 on testnet<br />
+| Run BIP-16-capable Aixcoin 0.6.0 on testnet<br />
 Mine coins using getwork interface<br />
 Result: blocks accepted, show up on blockexplorer.com/testnet<br />
 Result: mined blocks' coinbase contains /P2SH/ string
@@ -96,7 +96,7 @@ Result: mined blocks' coinbase contains /P2SH/ string
 
 |- style="color:green;"
 |
-| Run BIP-16-capable Bitcoin 0.6.0 on testnet<br />
+| Run BIP-16-capable Aixcoin 0.6.0 on testnet<br />
 Mine coins using getmemorypool interface<br />
 Result: blocks accepted, show up on blockexplorer.com/testnet<br />
 Result: mined blocks' coinbase contains /P2SH/ string
@@ -104,7 +104,7 @@ Result: mined blocks' coinbase contains /P2SH/ string
 
 |- style="color:green;"
 | &#x2713;
-| Run BIP-16-capable Bitcoin 0.3.19 through 0.5.1 backports on testnet<br />
+| Run BIP-16-capable Aixcoin 0.3.19 through 0.5.1 backports on testnet<br />
 Mine coins using built-in miner<br />
 Result: blocks accepted, show up on blockexplorer.com/testnet<br />
 Result: mined blocks' coinbase contains /P2SH/ string
@@ -112,7 +112,7 @@ Result: mined blocks' coinbase contains /P2SH/ string
 
 |- style="color:green;"
 | &#x2713;
-| Run BIP-16-capable Bitcoin 3.19 through 0.5.1 backports on testnet<br />
+| Run BIP-16-capable Aixcoin 3.19 through 0.5.1 backports on testnet<br />
 Mine coins using getwork interface<br />
 Result: blocks accepted, show up on blockexplorer.com/testnet<br />
 Result: mined blocks' coinbase contains /P2SH/ string
@@ -120,7 +120,7 @@ Result: mined blocks' coinbase contains /P2SH/ string
 
 |- style="color:green;"
 | &#x2713;
-| Run BIP-16-capable Bitcoin 0.3.19 through 0.5.1 backports on testnet<br />
+| Run BIP-16-capable Aixcoin 0.3.19 through 0.5.1 backports on testnet<br />
 Mine coins using built-in miner<br />
 Result: blocks accepted, show up on blockexplorer.com/testnet<br />
 Result: mined blocks' coinbase contains /P2SH/ string
@@ -128,7 +128,7 @@ Result: mined blocks' coinbase contains /P2SH/ string
 
 |- style="color:green;"
 | &#x2713;
-| Run BIP-16-capable Bitcoin 3.19 through 0.5.1 backports on testnet<br />
+| Run BIP-16-capable Aixcoin 3.19 through 0.5.1 backports on testnet<br />
 Mine coins using getwork interface<br />
 Result: blocks accepted, show up on blockexplorer.com/testnet<br />
 Result: mined blocks' coinbase contains /P2SH/ string
@@ -137,7 +137,7 @@ Result: mined blocks' coinbase contains /P2SH/ string
 
 |- style="color:red;"
 |
-| Run BIP-16-capable Bitcoin 3.19 through 0.5.1 backports on testnet<br />
+| Run BIP-16-capable Aixcoin 3.19 through 0.5.1 backports on testnet<br />
 Mine coins using getmemorypool interface<br />
 Result: blocks accepted, show up on blockexplorer.com/testnet<br />
 Result: mined blocks' coinbase contains /P2SH/ string
@@ -165,7 +165,7 @@ OP_CHECKMULTISIG counting of signature operations inside BIP 16 transactions<br 
 
 |- style="color:green;"
 | &#x2713;
-| Run Bitcoin 0.6 on main net <br />
+| Run Aixcoin 0.6 on main net <br />
 Result: blocks created properly
 Result: blocks include /P2SH/ string in their coinbase
 | various mining pools

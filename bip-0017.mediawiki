@@ -9,7 +9,7 @@
 
 ==Abstract==
 
-This BIP describes a new opcode (OP_CHECKHASHVERIFY) for the Bitcoin scripting system, and a new 'standard' transaction type that uses it to enables the receiver of aixcoins to specify the transaction type needed to re-spend them.
+This BIP describes a new opcode (OP_CHECKHASHVERIFY) for the Aixcoin scripting system, and a new 'standard' transaction type that uses it to enables the receiver of aixcoins to specify the transaction type needed to re-spend them.
 
 ==Motivation==
 

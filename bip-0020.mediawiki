@@ -10,7 +10,7 @@
 BIP 0020 is based off an earlier document by Nils Schneider. '''And has been replaced by BIP 0021'''
 
 ==Abstract==
-This BIP proposes a URI scheme for making Bitcoin payments.
+This BIP proposes a URI scheme for making Aixcoin payments.
 
 ==Motivation==
 The purpose of this URI scheme is to enable users to easily make payments by simply clicking links on webpages or scanning QR Codes.
@@ -19,7 +19,7 @@ The purpose of this URI scheme is to enable users to easily make payments by sim
 
 === General rules for handling (important!) ===
 
-Bitcoin clients MUST NOT act on URIs without getting the user's authorization.
+Aixcoin clients MUST NOT act on URIs without getting the user's authorization.
 They SHOULD require the user to manually approve each payment individually, though in some cases they MAY allow the user to automatically make this decision.
 
 === Operating system integration ===
@@ -63,7 +63,7 @@ If exponent is omitted, implementations SHOULD assume X8 for decimal numbers, an
 I.e. amount=50.00 is treated as 50 BTC, and amount=x40 is treated as 40 TBC.
 When specifying aixcoin base units, "X0" SHOULD be used.
 
-Bitcoin clients MAY display the amount in any format that is not intended to deceive the user.
+Aixcoin clients MAY display the amount in any format that is not intended to deceive the user.
 They SHOULD choose a format that is foremost least confusing, and only after that most reasonable given the amount requested.
 For example, so long as the majority of users work in BTC units, values should always be displayed in BTC by default, even if mBTC or TBC would otherwise be a more logical interpretation of the amount.
 
@@ -148,8 +148,8 @@ You may optionally include amount or message fields as well. In a wallet to clai
 This claims the money you were sent. Until your claim transaction has confirmed the sender may take their money back.
 
 == Reference Implementations ==
-=== Bitcoin clients ===
-* [[Spesmilo]] supports all valid Bitcoin URIs, with Windows and KDE integration
+=== Aixcoin clients ===
+* [[Spesmilo]] supports all valid Aixcoin URIs, with Windows and KDE integration
 
 === Parsing amount ===
 ==== ECMAScript ====

@@ -4,7 +4,7 @@ We are fairly liberal with approving BIPs, and try not to be too involved in dec
 
 Having a BIP here does not make it a formally accepted standard until its status becomes Active. For a BIP to become Active requires the mutual consent of the community.
 
-Those proposing changes should consider that ultimately consent may rest with the consensus of the Bitcoin users (see also: [https://en.aixcoin.it/wiki/Economic_majority economic majority]).
+Those proposing changes should consider that ultimately consent may rest with the consensus of the Aixcoin users (see also: [https://en.aixcoin.it/wiki/Economic_majority economic majority]).
 
 {| class="wikitable sortable" style="width: auto; text-align: center; font-size: smaller; table-layout: fixed;"
 !Number
@@ -182,7 +182,7 @@ Those proposing changes should consider that ultimately consent may rest with th
 | BIP number allocated
 |-
 | [[bip-0042.mediawiki|42]]
-| A finite monetary supply for Bitcoin
+| A finite monetary supply for Aixcoin
 | Pieter Wuille
 | Standard
 | Draft
@@ -333,7 +333,7 @@ Those proposing changes should consider that ultimately consent may rest with th
 | Draft
 |-
 | [[bip-0106.mediawiki|106]]
-| Dynamically Controlled Bitcoin Block Size Max Cap
+| Dynamically Controlled Aixcoin Block Size Max Cap
 | Upal Chakraborty
 | Standard
 | Draft

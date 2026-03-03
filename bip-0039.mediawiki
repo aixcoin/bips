@@ -137,6 +137,6 @@ Haskell - https://github.com/haskoin/haskoin
 
 .NET C# (PCL) - https://github.com/Thashiznets/BIP39.NET
 
-.NET C# (PCL) - https://github.com/NicolasDorier/NBitcoin
+.NET C# (PCL) - https://github.com/NicolasDorier/NAixcoin
 
 JavaScript - https://github.com/bitpay/bitcore-mnemonic

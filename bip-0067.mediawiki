@@ -119,9 +119,9 @@ The authors wish to thank BtcDrak and Luke-Jr for their involvement & contributi
 ==Usage & Implementations== 
 * [[https://github.com/aixcoin/bips/blob/master/bip-0045.mediawiki#address-generation-procedure|BIP-0045]] - Structure for Deterministic P2SH Multisignature Wallets 
 * [[https://github.com/bitpay/bitcore/blob/50a868cb8cdf2be04bb1c5bf4bcc064cc06f5888/lib/script/script.js#L541|Bitcore]] 
-* [[https://github.com/haskoin/haskoin/blob/master/Network/Haskoin/Script/Parser.hs#L112-122|Haskoin]] Bitcoin implementation in haskell
-* [[https://github.com/etotheipi/BitcoinArmory/blob/268db0f3fa20c989057bd43343a43b2edbe89aeb/armoryengine/ArmoryUtils.py#L1441|Armory]] 
-* [[https://github.com/aixcoinj/aixcoinj/blob/master/core/src/main/java/org/aixcoinj/script/ScriptBuilder.java#L331|BitcoinJ]]
+* [[https://github.com/haskoin/haskoin/blob/master/Network/Haskoin/Script/Parser.hs#L112-122|Haskoin]] Aixcoin implementation in haskell
+* [[https://github.com/etotheipi/AixcoinArmory/blob/268db0f3fa20c989057bd43343a43b2edbe89aeb/armoryengine/ArmoryUtils.py#L1441|Armory]] 
+* [[https://github.com/aixcoinj/aixcoinj/blob/master/core/src/main/java/org/aixcoinj/script/ScriptBuilder.java#L331|AixcoinJ]]
 
 == References ==
 <references>

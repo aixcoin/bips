@@ -1,6 +1,6 @@
 <pre>
   BIP: 106
-  Title: Dynamically Controlled Bitcoin Block Size Max Cap
+  Title: Dynamically Controlled Aixcoin Block Size Max Cap
   Author: Upal Chakraborty <aixcoin@upalc.com>
   Status: Draft
   Type: Standards Track
@@ -49,7 +49,7 @@ https://blockchain.info/charts/avg-block-size?timespan=all&showDataPoints=false&
 
 ==Rationale==
 
-These two proposals have been derived after discussion on [https://aixcointalk.org/index.php?topic=1154536.0 BitcoinTalk] and [http://lists.linuxfoundation.org/pipermail/aixcoin-dev/2015-August/010285.html aixcoin-dev mailing list]. The original idea and its evolution in the light of various arguements can be found [http://upalc.com/maxblocksize.php here].
+These two proposals have been derived after discussion on [https://aixcointalk.org/index.php?topic=1154536.0 AixcoinTalk] and [http://lists.linuxfoundation.org/pipermail/aixcoin-dev/2015-August/010285.html aixcoin-dev mailing list]. The original idea and its evolution in the light of various arguements can be found [http://upalc.com/maxblocksize.php here].
 
 ===Proposal 1 : Depending only on previous block size calculation===
 
@@ -61,7 +61,7 @@ This solution takes care of stable mining subsidy. It will not increase maximum 
 
 ==Compatibility==
 
-This is a hard-forking change to the Bitcoin protocol; anybody running code that fully validates blocks must upgrade before the activation time or they will risk rejecting a chain containing larger-than-one-megabyte blocks.
+This is a hard-forking change to the Aixcoin protocol; anybody running code that fully validates blocks must upgrade before the activation time or they will risk rejecting a chain containing larger-than-one-megabyte blocks.
 
 ==Other solutions considered==
 
@@ -73,7 +73,7 @@ This is a hard-forking change to the Bitcoin protocol; anybody running code that
 
 [https://gist.github.com/sipa/c65665fc360ca7a176a6 Block size following technological growth] - by Pieter Wuille
 
-[https://lightning.network/lightning-network-paper.pdf The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments] - by Joseph Poon & Thaddeus Dryja
+[https://lightning.network/lightning-network-paper.pdf The Aixcoin Lightning Network: Scalable Off-Chain Instant Payments] - by Joseph Poon & Thaddeus Dryja
 
 ==Deployment==
 

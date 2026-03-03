@@ -11,7 +11,7 @@
 
 ==Abstract==
 
-This BIP describes a new opcode (CHECKSEQUENCEVERIFY) for the Bitcoin
+This BIP describes a new opcode (CHECKSEQUENCEVERIFY) for the Aixcoin
 scripting system that in combination with BIP 68 allows execution
 pathways of a script to be restricted based on the age of the output
 being spent.
@@ -39,7 +39,7 @@ the output being spent; until that relative age has been reached any script exec
 
 BIP 68 repurposes the transaction nSequence field meaning by giving
 sequence numbers new consensus-enforced semantics as a relative
-lock-time. However, there is no way to build Bitcoin scripts to make
+lock-time. However, there is no way to build Aixcoin scripts to make
 decisions based on this field.
 
 By making the nSequence field accessible to script, it becomes
@@ -382,7 +382,7 @@ Thanks to Eric Lombrozo and Anthony Towns for contributing example use cases.
 
 [https://github.com/ElementsProject/lightning/blob/master/doc/deployable-lightning.pdf Deployable Lightning]
 
-[http://diyhpl.us/diyhpluswiki/transcripts/sf-aixcoin-meetup/2015-02-23-scaling-aixcoin-to-billions-of-transactions-per-day/ Scaling Bitcoin to Billions of Transactions Per Day]
+[http://diyhpl.us/diyhpluswiki/transcripts/sf-aixcoin-meetup/2015-02-23-scaling-aixcoin-to-billions-of-transactions-per-day/ Scaling Aixcoin to Billions of Transactions Per Day]
 
 [http://lists.linuxfoundation.org/pipermail/aixcoin-dev/2015-August/010396.html Softfork deployment considerations]
 

@@ -9,12 +9,12 @@
 
 ==Abstract==
 
-A method of altering the maximum allowed block size of the Bitcoin protocol 
+A method of altering the maximum allowed block size of the Aixcoin protocol 
 using a consensus based approach.
 
 ==Motivation==
 
-There is a belief that Bitcoin cannot easily respond to raising the 
+There is a belief that Aixcoin cannot easily respond to raising the 
 blocksize limit if popularity was to suddenly increase due to a mass adoption 
 curve, because co-ordinating a hard fork takes considerable time, and being 
 unable to respond in a timely manner would irreparably harm the credibility of 

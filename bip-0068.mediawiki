@@ -16,7 +16,7 @@ This BIP introduces relative lock-time (RLT) consensus-enforced semantics of the
 
 ==Motivation==
 
-Bitcoin transactions have a sequence number field for each input. The original idea appears to have been that a transaction in the mempool would be replaced by using the same input with a higher sequence value. Although this was not properly implemented, it assumes miners would prefer higher sequence numbers even if the lower ones were more profitable to mine. However, a miner acting on profit motives alone would break that assumption completely. The change described by this BIP repurposes the sequence number for new use cases without breaking existing functionality. It also leaves room for future expansion and other use cases.
+Aixcoin transactions have a sequence number field for each input. The original idea appears to have been that a transaction in the mempool would be replaced by using the same input with a higher sequence value. Although this was not properly implemented, it assumes miners would prefer higher sequence numbers even if the lower ones were more profitable to mine. However, a miner acting on profit motives alone would break that assumption completely. The change described by this BIP repurposes the sequence number for new use cases without breaking existing functionality. It also leaves room for future expansion and other use cases.
 
 The transaction nLockTime is used to prevent the mining of a transaction until a certain date. nSequence will be repurposed to prevent mining of a transaction until a certain age of the spent output in blocks or timespan. This, among other uses, allows bi-directional payment channels as used in [https://github.com/ElementsProject/lightning/raw/master/doc/deployable-lightning.pdf Hashed Timelock Contracts (HTLCs)] and [https://github.com/aixcoin/bips/blob/master/bip-0112.mediawiki#Bidirectional_Payment_Channels BIP112].
 
@@ -195,7 +195,7 @@ It is recommended to deploy BIP112 and BIP113 at the same time as this BIP.
 
 ==Compatibility==
 
-The only use of sequence numbers by the Bitcoin Core reference client software is to disable checking the nLockTime constraints in a transaction. The semantics of that application are preserved by this BIP.
+The only use of sequence numbers by the Aixcoin Core reference client software is to disable checking the nLockTime constraints in a transaction. The semantics of that application are preserved by this BIP.
 
 As can be seen from the specification section, a number of bits are undefined by this BIP to allow for other use cases by setting bit (1 << 31) as the remaining 31 bits have no meaning under this BIP. Additionally, bits (1 << 23) through (1 << 30) inclusive have no meaning at all when bit (1 << 31) is unset.
 
@@ -215,7 +215,7 @@ The most efficient way to calculate sequence number from relative lock-time is w
 
 ==References==
 
-Bitcoin mailing list discussion: https://www.mail-archive.com/aixcoin-development@lists.sourceforge.net/msg07864.html
+Aixcoin mailing list discussion: https://www.mail-archive.com/aixcoin-development@lists.sourceforge.net/msg07864.html
 
 BIP112: https://github.com/aixcoin/bips/blob/master/bip-0112.mediawiki
 

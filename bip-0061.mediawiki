@@ -9,7 +9,7 @@
 
 ==Abstract==
 
-This BIP describes a new message type for the Bitcoin peer-to-peer network.
+This BIP describes a new message type for the Aixcoin peer-to-peer network.
 
 ==Motivation==
 

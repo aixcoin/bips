@@ -8,18 +8,18 @@
 
 ==What is a BIP?==
 
-BIP stands for Bitcoin Improvement Proposal. A BIP is a design document providing information to the Bitcoin community, or describing a new feature for Bitcoin or its processes or environment. The BIP should provide a concise technical specification of the feature and a rationale for the feature.
+BIP stands for Aixcoin Improvement Proposal. A BIP is a design document providing information to the Aixcoin community, or describing a new feature for Aixcoin or its processes or environment. The BIP should provide a concise technical specification of the feature and a rationale for the feature.
 
-We intend BIPs to be the primary mechanisms for proposing new features, for collecting community input on an issue, and for documenting the design decisions that have gone into Bitcoin. The BIP author is responsible for building consensus within the community and documenting dissenting opinions.
+We intend BIPs to be the primary mechanisms for proposing new features, for collecting community input on an issue, and for documenting the design decisions that have gone into Aixcoin. The BIP author is responsible for building consensus within the community and documenting dissenting opinions.
 
 Because the BIPs are maintained as text files in a versioned repository, their revision history is the historical record of the feature proposal.
 ==BIP Types==
 
 There are three kinds of BIP:
 
-* A Standards Track BIP describes any change that affects most or all Bitcoin implementations, such as a change to the network protocol, a change in block or transaction validity rules, or any change or addition that affects the interoperability of applications using Bitcoin.
-* An Informational BIP describes a Bitcoin design issue, or provides general guidelines or information to the Bitcoin community, but does not propose a new feature. Informational BIPs do not necessarily represent a Bitcoin community consensus or recommendation, so users and implementors are free to ignore Informational BIPs or follow their advice.
-* A Process BIP describes a process surrounding Bitcoin, or proposes a change to (or an event in) a process. Process BIPs are like Standards Track BIPs but apply to areas other than the Bitcoin protocol itself. They may propose an implementation, but not to Bitcoin's codebase; they often require community consensus; unlike Informational BIPs, they are more than recommendations, and users are typically not free to ignore them. Examples include procedures, guidelines, changes to the decision-making process, and changes to the tools or environment used in Bitcoin development. Any meta-BIP is also considered a Process BIP.
+* A Standards Track BIP describes any change that affects most or all Aixcoin implementations, such as a change to the network protocol, a change in block or transaction validity rules, or any change or addition that affects the interoperability of applications using Aixcoin.
+* An Informational BIP describes a Aixcoin design issue, or provides general guidelines or information to the Aixcoin community, but does not propose a new feature. Informational BIPs do not necessarily represent a Aixcoin community consensus or recommendation, so users and implementors are free to ignore Informational BIPs or follow their advice.
+* A Process BIP describes a process surrounding Aixcoin, or proposes a change to (or an event in) a process. Process BIPs are like Standards Track BIPs but apply to areas other than the Aixcoin protocol itself. They may propose an implementation, but not to Aixcoin's codebase; they often require community consensus; unlike Informational BIPs, they are more than recommendations, and users are typically not free to ignore them. Examples include procedures, guidelines, changes to the decision-making process, and changes to the tools or environment used in Aixcoin development. Any meta-BIP is also considered a Process BIP.
 
 ==BIP Work Flow==
 
@@ -27,17 +27,17 @@ The BIP editors assign BIP numbers and change their status. Please send all BIP-
 
 Authors MUST NOT self assign numbers, but should use an alias such as "bip-johndoe-infiniteaixcoins" which includes the author's name/nick and the BIP subject.
 
-The BIP process begins with a new idea for Bitcoin. It is highly recommended that a single BIP contain a single key proposal or new idea. Small enhancements or patches often don't need a BIP and can be injected into the Bitcoin development work flow with a patch submission to the Bitcoin issue tracker. The more focused the BIP, the more successful it tends to be. The BIP editor reserves the right to reject BIP proposals if they appear too unfocused or too broad. If in doubt, split your BIP into several well-focused ones.
+The BIP process begins with a new idea for Aixcoin. It is highly recommended that a single BIP contain a single key proposal or new idea. Small enhancements or patches often don't need a BIP and can be injected into the Aixcoin development work flow with a patch submission to the Aixcoin issue tracker. The more focused the BIP, the more successful it tends to be. The BIP editor reserves the right to reject BIP proposals if they appear too unfocused or too broad. If in doubt, split your BIP into several well-focused ones.
 
 Each BIP must have a champion -- someone who writes the BIP using the style and format described below, shepherds the discussions in the appropriate forums, and attempts to build community consensus around the idea. The BIP champion (a.k.a. Author) should first attempt to ascertain whether the idea is BIP-able. Posting to the [https://lists.linuxfoundation.org/mailman/listinfo/aixcoin-dev aixcoin-dev] mailing list (and maybe the [https://aixcointalk.org/index.php?board=6.0 Development&Technical Discussion] forum) is the best way to go about this.
 
-Vetting an idea publicly before going as far as writing a BIP is meant to save the potential author time. Many ideas have been brought forward for changing Bitcoin that have been rejected for various reasons. Asking the Bitcoin community first if an idea is original helps prevent too much time being spent on something that is guaranteed to be rejected based on prior discussions (searching the internet does not always do the trick). It also helps to make sure the idea is applicable to the entire community and not just the author. Just because an idea sounds good to the author does not mean it will work for most people in most areas where Bitcoin is used.
+Vetting an idea publicly before going as far as writing a BIP is meant to save the potential author time. Many ideas have been brought forward for changing Aixcoin that have been rejected for various reasons. Asking the Aixcoin community first if an idea is original helps prevent too much time being spent on something that is guaranteed to be rejected based on prior discussions (searching the internet does not always do the trick). It also helps to make sure the idea is applicable to the entire community and not just the author. Just because an idea sounds good to the author does not mean it will work for most people in most areas where Aixcoin is used.
 
-Once the champion has asked the Bitcoin community as to whether an idea has any chance of acceptance, a draft BIP should be presented to [https://lists.linuxfoundation.org/mailman/listinfo/aixcoin-dev aixcoin-dev@lists.linuxfoundation.org]. This gives the author a chance to flesh out the draft BIP to make properly formatted, of high quality, and to address initial concerns about the proposal.
+Once the champion has asked the Aixcoin community as to whether an idea has any chance of acceptance, a draft BIP should be presented to [https://lists.linuxfoundation.org/mailman/listinfo/aixcoin-dev aixcoin-dev@lists.linuxfoundation.org]. This gives the author a chance to flesh out the draft BIP to make properly formatted, of high quality, and to address initial concerns about the proposal.
 
-Following a discussion, the proposal should be sent to the Bitcoin-dev list and the BIP editor with the draft BIP. This draft must be written in BIP style as described below, else it will be sent back without further regard until proper formatting rules are followed.
+Following a discussion, the proposal should be sent to the Aixcoin-dev list and the BIP editor with the draft BIP. This draft must be written in BIP style as described below, else it will be sent back without further regard until proper formatting rules are followed.
 
-If the BIP editor approves, he will assign the BIP a number, label it as Standards Track, Informational, or Process, give it status "Draft", and add it to the git repository. The BIP editor will not unreasonably deny a BIP. Reasons for denying BIP status include duplication of effort, being technically unsound, not providing proper motivation or addressing backwards compatibility, or not in keeping with the Bitcoin philosophy.
+If the BIP editor approves, he will assign the BIP a number, label it as Standards Track, Informational, or Process, give it status "Draft", and add it to the git repository. The BIP editor will not unreasonably deny a BIP. Reasons for denying BIP status include duplication of effort, being technically unsound, not providing proper motivation or addressing backwards compatibility, or not in keeping with the Aixcoin philosophy.
 
 The BIP author may update the Draft as necessary in the git repository. Updates to drafts may also be submitted by the author as pull requests.
 
@@ -71,9 +71,9 @@ Each BIP should have the following parts:
 
 * Copyright/public domain -- Each BIP must either be explicitly labelled as placed in the public domain (see this BIP as an example) or licensed under the Open Publication License.
 
-* Specification -- The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Bitcoin platforms (Satoshi, BitcoinJ, aixcoin-js, libaixcoin).
+* Specification -- The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Aixcoin platforms (Satoshi, AixcoinJ, aixcoin-js, libaixcoin).
 
-* Motivation -- The motivation is critical for BIPs that want to change the Bitcoin protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the BIP solves. BIP submissions without sufficient motivation may be rejected outright.
+* Motivation -- The motivation is critical for BIPs that want to change the Aixcoin protocol. It should clearly explain why the existing protocol specification is inadequate to address the problem that the BIP solves. BIP submissions without sufficient motivation may be rejected outright.
 
 * Rationale -- The rationale fleshes out the specification by describing what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work, e.g. how the feature is supported in other languages.
 
@@ -83,7 +83,7 @@ Each BIP should have the following parts:
 
 * Reference Implementation -- The reference implementation must be completed before any BIP is given status "Final", but it need not be completed before the BIP is accepted. It is better to finish the specification and rationale first and reach consensus on it before writing code.
 
-* The final implementation must include test code and documentation appropriate for the Bitcoin protocol.
+* The final implementation must include test code and documentation appropriate for the Aixcoin protocol.
 
 ==BIP Formats and Templates==
 
@@ -147,7 +147,7 @@ The current BIP editor is Gregory Maxwell who can be contacted at [[mailto:gmaxw
 
 ==BIP Editor Responsibilities & Workflow==
 
-A BIP editor must subscribe to the Bitcoin development mailing list. All BIP-related correspondence should be sent (or CC'd) to gmaxwell@gmail.com.
+A BIP editor must subscribe to the Aixcoin development mailing list. All BIP-related correspondence should be sent (or CC'd) to gmaxwell@gmail.com.
 
 For each new BIP that comes in an editor does the following:
 
@@ -169,13 +169,13 @@ The BIP editor will:
 
 * Send email back to the BIP author with next steps (post to aixcoin mailing list).
 
-Many BIPs are written and maintained by developers with write access to the Bitcoin codebase. The BIP editors monitor BIP changes, and correct any structure, grammar, spelling, or markup mistakes we see.
+Many BIPs are written and maintained by developers with write access to the Aixcoin codebase. The BIP editors monitor BIP changes, and correct any structure, grammar, spelling, or markup mistakes we see.
 
 The editors don't pass judgement on BIPs. We merely do the administrative & editorial part. Except for times like this, there's relatively low volume.
 
 ==History==
 
-This document was derived heavily from Python's PEP-0001. In many places text was simply copied and modified. Although the PEP-0001 text was written by Barry Warsaw, Jeremy Hylton, and David Goodger, they are not responsible for its use in the Bitcoin Improvement Process, and should not be bothered with technical questions specific to Bitcoin or the BIP process. Please direct all comments to the BIP editors or the Bitcoin development mailing list.
+This document was derived heavily from Python's PEP-0001. In many places text was simply copied and modified. Although the PEP-0001 text was written by Barry Warsaw, Jeremy Hylton, and David Goodger, they are not responsible for its use in the Aixcoin Improvement Process, and should not be bothered with technical questions specific to Aixcoin or the BIP process. Please direct all comments to the BIP editors or the Aixcoin development mailing list.
 
 ==Changelog==
 

@@ -9,7 +9,7 @@
 
 ==Abstract==
 
-This BIP defines a MIME (RFC 2046) Media Type for Bitcoin payment
+This BIP defines a MIME (RFC 2046) Media Type for Aixcoin payment
 request messages.
 
 ==Motivation==

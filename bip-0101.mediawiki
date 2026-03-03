@@ -13,7 +13,7 @@ This BIP proposes replacing the fixed one megabyte maximum block size with a max
 
 ==Motivation==
 
-Transaction volume on the Bitcoin network has been growing, and will soon reach the one-megabyte-every-ten-minutes limit imposed by the one megabyte maximum block size. Increasing the maximum size reduces the impact of that limit on Bitcoin adoption and growth.
+Transaction volume on the Aixcoin network has been growing, and will soon reach the one-megabyte-every-ten-minutes limit imposed by the one megabyte maximum block size. Increasing the maximum size reduces the impact of that limit on Aixcoin adoption and growth.
 
 ==Specification==
 
@@ -116,7 +116,7 @@ BIP 100 proposes a dynamic limit determined by miner preferences expressed in co
 
 ==Compatibility==
 
-This is a hard-forking change to the Bitcoin protocol; anybody running code that fully validates blocks must upgrade before the activation time or they will risk rejecting a chain containing larger-than-one-megabyte blocks.
+This is a hard-forking change to the Aixcoin protocol; anybody running code that fully validates blocks must upgrade before the activation time or they will risk rejecting a chain containing larger-than-one-megabyte blocks.
 
 Simplified Payment Verification software is not affected, unless it makes assumptions about the maximum depth of a transaction's merkle branch based on the minimum size of a transaction and the maximum block size.
 

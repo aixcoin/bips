@@ -9,7 +9,7 @@
 
 ==Abstract==
 
-This BIP describes a new opcode (OP_CHECKLOCKTIMEVERIFY) for the Bitcoin
+This BIP describes a new opcode (OP_CHECKLOCKTIMEVERIFY) for the Aixcoin
 scripting system that allows a transaction output to be made unspendable until
 some point in the future.
 
@@ -92,7 +92,7 @@ making transaction malleability a non-issue.
 
 ====Two-factor wallets====
 
-Services like GreenAddress store Bitcoins with 2-of-2 multisig scriptPubKey's
+Services like GreenAddress store Aixcoins with 2-of-2 multisig scriptPubKey's
 such that one keypair is controlled by the user, and the other keypair is
 controlled by the service. To spend funds the user uses locally installed
 wallet software that generates one of the required signatures, and then uses a
@@ -185,7 +185,7 @@ As an aside, note how if the SignatureHash() algorithm could optionally cover
 part of the scriptSig the signature could require that the scriptSig contain
 CHECKLOCKTIMEVERIFY opcodes, and additionally, require that they be executed.
 (the CODESEPARATOR opcode came very close to making this possible in v0.1 of
-Bitcoin) This per-signature capability could replace the per-transaction
+Aixcoin) This per-signature capability could replace the per-transaction
 nLockTime field entirely as a valid signature would now be the proof that a
 transaction output ''can'' be spent.
 
