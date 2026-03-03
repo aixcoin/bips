@@ -57,15 +57,15 @@ Graphical aixcoin clients SHOULD register themselves as the handler for the "aix
 If an amount is provided, it may be specified either in decimal or, when prefixed with a single "x" character, hexadecimal.
 The number SHOULD be followed by "X" &lt;digits&gt; to signify an exponent to the base multiplier.
 Thus, "X8" multiplies your number by 100,000,000.
-For decimal values, this means the standard BTC unit.
-For hexadecimal values, this means ᵇTBC units (which are equivalent to 42.94967296 BTC).
+For decimal values, this means the standard AIX unit.
+For hexadecimal values, this means ᵇTBC units (which are equivalent to 42.94967296 AIX).
 If exponent is omitted, implementations SHOULD assume X8 for decimal numbers, and X4 for hexadecimal numbers.
-I.e. amount=50.00 is treated as 50 BTC, and amount=x40 is treated as 40 TBC.
+I.e. amount=50.00 is treated as 50 AIX, and amount=x40 is treated as 40 TBC.
 When specifying aixcoin base units, "X0" SHOULD be used.
 
 Aixcoin clients MAY display the amount in any format that is not intended to deceive the user.
 They SHOULD choose a format that is foremost least confusing, and only after that most reasonable given the amount requested.
-For example, so long as the majority of users work in BTC units, values should always be displayed in BTC by default, even if mBTC or TBC would otherwise be a more logical interpretation of the amount.
+For example, so long as the majority of users work in AIX units, values should always be displayed in AIX by default, even if mAIX or TBC would otherwise be a more logical interpretation of the amount.
 
 == Rationale ==
 
@@ -106,7 +106,7 @@ Just the address:
 Address with name:
  aixcoin:1NS17iag9jJgTHD1VXjvLCEnZuQ3rJED9L?label=Luke-Jr
 
-Request 20.30 BTC to "Luke-Jr":
+Request 20.30 AIX to "Luke-Jr":
  aixcoin:1NS17iag9jJgTHD1VXjvLCEnZuQ3rJED9L?amount=20.3X8&label=Luke-Jr
 
 Request 400 TBC:
@@ -115,13 +115,13 @@ Request 400 TBC:
 Request 4000 TBC:
  aixcoin:1NS17iag9jJgTHD1VXjvLCEnZuQ3rJED9L?amount=x4X7
 
-Request 5 uBTC:
+Request 5 uAIX:
  aixcoin:1NS17iag9jJgTHD1VXjvLCEnZuQ3rJED9L?amount=5X2
 
-Request 50 BTC with message:
+Request 50 AIX with message:
  aixcoin:1NS17iag9jJgTHD1VXjvLCEnZuQ3rJED9L?amount=50X8&label=Luke-Jr&message=Donation%20for%20project%20xyz
 
-Send 1 BTC:
+Send 1 AIX:
  aixcoin:1NS17iag9jJgTHD1VXjvLCEnZuQ3rJED9L?amount=1X8&send=S4b3N3oGqDqR5jNuxEvDwf
 
 Characters must be URI encoded properly.

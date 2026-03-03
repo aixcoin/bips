@@ -114,7 +114,7 @@ Vector 4: (from bitcore)
 ** 3Q4sF6tv9wsdqu2NtARzNCpQgwifm2rAba
 
 ==Acknowledgements==
-The authors wish to thank BtcDrak and Luke-Jr for their involvement & contributions in the early discussions of this BIP. 
+The authors wish to thank AixDrak and Luke-Jr for their involvement & contributions in the early discussions of this BIP. 
 
 ==Usage & Implementations== 
 * [[https://github.com/aixcoin/bips/blob/master/bip-0045.mediawiki#address-generation-procedure|BIP-0045]] - Structure for Deterministic P2SH Multisignature Wallets 

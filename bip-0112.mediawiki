@@ -1,7 +1,7 @@
 <pre>
   BIP: 112
   Title: CHECKSEQUENCEVERIFY
-  Authors: BtcDrak <btcdrak@gmail.com>
+  Authors: AixDrak <aixdrak@gmail.com>
            Mark Friedenbach <mark@friedenbach.org>
            Eric Lombrozo <elombrozo@gmail.com>
   Status: Draft
@@ -363,7 +363,7 @@ CHECKSEQUENCEVERIFY.
 The reference implementation and this BIP was based heavily on work
 done by Peter Todd for the closely related BIP 65.
 
-BtcDrak authored this BIP document.
+AixDrak authored this BIP document.
 
 Thanks to Eric Lombrozo and Anthony Towns for contributing example use cases.
 

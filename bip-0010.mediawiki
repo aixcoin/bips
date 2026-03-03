@@ -28,7 +28,7 @@ This BIP proposes the following process, with terms in quotes referring to recom
 #  The TxDP will have an "DP ID" or "Unsigned ID" which is the hash of the proposed transaction with blanked scripts, in Base58.  This is a specific naming convention to make sure it is not confused with the actual the transaction ID that it will have after it is broadcast (the transaction ID cannot be determined until after all signatures are collected).  The final Tx ID can be referred to as its "Broadcast ID", in order to distinguish it from the pre-signed ID.
 #  The TxDP will have a potentially-unordered list of sig-pubkey pairs which represent collected signatures.  If you receive a TxDP missing only your signature, you can broadcast it as soon as you sign it.
 #  Identical TxDP objects with different signatures can be easily combined.  This allows one party to send out all the requests for signatures at once, and combine them all when they are received (instead of having to "pass it around".
-#  For cases where the TxDP might be put into a file or sent via email, it should use .txdp or .btcdp suffix
+#  For cases where the TxDP might be put into a file or sent via email, it should use .txdp or .aixdp suffix
 
 Anyone adopting BIP 0010 for multi-sig transactions will use the following format (without indentation):
 
@@ -88,7 +88,7 @@ The following is an example TxDP from Armory, produced while running on the test
  -------END-TRANSACTION-3fX59xPj-------------------------------------------------
 </pre>
 
-In this transaction, there are two inputs, one of 150 BTC and the other of 12 BTC.  This transaction combines 162 BTC to create two outputs, one of 160 BTC, one 1.9995 BTC, and a tx fee of 0.0005.  In this TxDP, both inputs have been signed, and thus could broadcast immediately.
+In this transaction, there are two inputs, one of 150 AIX and the other of 12 AIX.  This transaction combines 162 AIX to create two outputs, one of 160 AIX, one 1.9995 AIX, and a tx fee of 0.0005.  In this TxDP, both inputs have been signed, and thus could broadcast immediately.
 
 The style of communication is taken directly from PGP/GPG, which uses blocks of ASCII like this to communicate encrypted messages and signatures.  This serialization is compact, and will be interpretted the same in all character encodings.  It can be copied inline into an email, or saved in a text file.  The advantage over the analogous PGP encoding is that there are some human readable elements to it, for users that wish to examine the TxDP packet manually, instead of requiring a program to parse the core elements of the TxDP.
 

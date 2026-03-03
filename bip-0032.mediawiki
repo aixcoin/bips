@@ -261,13 +261,13 @@ A Java implementation is available at https://github.com/bitsofproof/supernode/b
 
 A C++ implementation is available at https://github.com/CodeShark/CoinClasses/tree/master/tests/hdwallets
 
-An Objective-C implementation is available at https://github.com/oleganza/CoreAixcoin/blob/master/CoreAixcoin/BTCKeychain.h
+An Objective-C implementation is available at https://github.com/oleganza/CoreAixcoin/blob/master/CoreAixcoin/AIXKeychain.h
 
 A Ruby implementation is available at https://github.com/GemHQ/money-tree
 
 Two Go implementations exist:
 
-hdkeychain (https://github.com/conformal/btcutil/tree/master/hdkeychain) provides an API for aixcoin hierarchical deterministic extended keys (BIP0032).  Go HD Wallet (https://github.com/WeMeetAgain/go-hdwallet).
+hdkeychain (https://github.com/conformal/aixutil/tree/master/hdkeychain) provides an API for aixcoin hierarchical deterministic extended keys (BIP0032).  Go HD Wallet (https://github.com/WeMeetAgain/go-hdwallet).
 
 Two JavaScript implementations exist: available at https://github.com/sarchar/brainwallet.github.com/tree/bip32 and https://github.com/bitpay/bitcore
 

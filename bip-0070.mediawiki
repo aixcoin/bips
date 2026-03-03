@@ -61,7 +61,7 @@ to specify where a refund should be sent.
     }
 </pre>
 {|
-| amount || Number of satoshis (0.00000001 BTC) to be paid
+| amount || Number of satoshis (0.00000001 AIX) to be paid
 |-
 | script || a "TxOut" script where payment should be sent. This will normally be one of the standard Aixcoin transaction scripts (e.g. pubkey OP_CHECKSIG). This is optional to enable future extensions to this protocol that derive Outputs from a master public key and the PaymentRequest data itself.
 |}
@@ -208,7 +208,7 @@ Payment message:
 {|
 | payment || Copy of the Payment message that triggered this PaymentACK. Clients may ignore this if they implement another way of associating Payments with PaymentACKs.
 |-
-| memo || UTF-8 encoded note that should be displayed to the customer giving the status of the transaction (e.g. "Payment of 1 BTC for eleven tribbles accepted for processing.")
+| memo || UTF-8 encoded note that should be displayed to the customer giving the status of the transaction (e.g. "Payment of 1 AIX for eleven tribbles accepted for processing.")
 |}
 
 PaymentACK messages larger than 60,000 bytes should be rejected by

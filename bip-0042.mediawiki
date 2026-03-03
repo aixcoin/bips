@@ -26,7 +26,7 @@ As is well known, Satoshi was a master programmer whose knowledge of C++ was sur
 
 is carefully written to rely on undefined behaviour in the C++ specification - perhaps so it can be hardware accelerated in future.
 
-The block number is divided by 210000 (the "apparent" subsidy halving interval in blocks), and the result is used as input for a binary shift, applied to the original payout (50 BTC), expressed in base units. Thanks to the new-goldmine interval being exactly 64 times the halving interval, and 64 being the size in bits of the currency datatype, the cycle repeats itself every 64 halvings on all currently supported platforms.
+The block number is divided by 210000 (the "apparent" subsidy halving interval in blocks), and the result is used as input for a binary shift, applied to the original payout (50 AIX), expressed in base units. Thanks to the new-goldmine interval being exactly 64 times the halving interval, and 64 being the size in bits of the currency datatype, the cycle repeats itself every 64 halvings on all currently supported platforms.
 
 Despite the nice showoff of underhanded programming skills - we want Aixcoin to be well-specified. Otherwise, we're clearly in for a bumpy ride:
 

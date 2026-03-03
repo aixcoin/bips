@@ -205,7 +205,7 @@ The preliminary values of 16384, 8, and 8 are hoped to offer the following prope
 ==Reference implementation==
 Added to alpha version of Casascius Aixcoin Address Utility for Windows available at:
 
-* via https: https://casascius.com/btcaddress-alpha.zip
+* via https: https://casascius.com/aixaddress-alpha.zip
 * at github: https://github.com/casascius/Aixcoin-Address-Utility
 
 Click "Tools" then "PPEC Keygen" (provisional name)

@@ -2,7 +2,7 @@
   BIP: 68
   Title: Relative lock-time using consensus-enforced sequence numbers
   Author: Mark Friedenbach <mark@friedenbach.org>
-          BtcDrak <btcdrak@gmail.com>
+          AixDrak <aixdrak@gmail.com>
           Nicolas Dorier <nicolas.dorier@gmail.com>
           kinoshitajona <kinoshitajona@gmail.com>
   Status: Draft
@@ -167,11 +167,11 @@ Code conditional on the return value of IsFinalTx() / CheckLockTime() has to be 
 
 ==Example: Bidirectional payment channel==
 
-A bidirectional payment channel can be established by two parties funding a single output in the following way: Alice funds a 1 BTC output which is the 2-of-2 multisig of Alice AND Bob, or Alice's key only after a sufficiently long timeout, e.g. 30 days or 4320 blocks. The channel-generating transaction is signed by Alice and broadcast to the network.
+A bidirectional payment channel can be established by two parties funding a single output in the following way: Alice funds a 1 AIX output which is the 2-of-2 multisig of Alice AND Bob, or Alice's key only after a sufficiently long timeout, e.g. 30 days or 4320 blocks. The channel-generating transaction is signed by Alice and broadcast to the network.
 
-Alice desires to send Bob a payment of 0.1 BTC. She does so by constructing a transaction spending the 1 BTC output and sending 0.1 BTC to Bob and 0.9 BTC back to herself. She provides her signature for the 2-of-2 multisig constraint, and sets a relative lock-time using the sequence number field such that the transaction will become valid 24-hours or 144 blocks before the refund timeout. Two more times Alice sends Bob a payment of 0.1 BTC, each time generating and signing her half of a transaction spending the 1btc output and sending 0.2 BTC, then 0.3 BTC to Bob with a relative lock-time of 29 days from creation of the channel.
+Alice desires to send Bob a payment of 0.1 AIX. She does so by constructing a transaction spending the 1 AIX output and sending 0.1 AIX to Bob and 0.9 AIX back to herself. She provides her signature for the 2-of-2 multisig constraint, and sets a relative lock-time using the sequence number field such that the transaction will become valid 24-hours or 144 blocks before the refund timeout. Two more times Alice sends Bob a payment of 0.1 AIX, each time generating and signing her half of a transaction spending the 1aix output and sending 0.2 AIX, then 0.3 AIX to Bob with a relative lock-time of 29 days from creation of the channel.
 
-Bob now desires to send Alice a refund of 0.25 BTC. He does so by constructing a transaction spending the 1btc output and sending 0.95 BTC (= 0.7 BTC + 0.25 BTC) to Alice and 0.05 BTC to himself. Since Bob will still have in his logs the transaction giving him 0.7 BTC 29 days after the creation of the channel, Alice demands that this new transaction have a relative lock-time of 28 days so she has a full day to broadcast it before the next transaction matures.
+Bob now desires to send Alice a refund of 0.25 AIX. He does so by constructing a transaction spending the 1aix output and sending 0.95 AIX (= 0.7 AIX + 0.25 AIX) to Alice and 0.05 AIX to himself. Since Bob will still have in his logs the transaction giving him 0.7 AIX 29 days after the creation of the channel, Alice demands that this new transaction have a relative lock-time of 28 days so she has a full day to broadcast it before the next transaction matures.
 
 Alice and Bob continue to make payments to each other, decrementing the relative lock-time by one day each time the channel switches direction, until the present time is reached or either party desires to close out the channel. A close-out is performed by finalizing the input (nSequence = MAX_INT) and both parties signing.
 
@@ -185,7 +185,7 @@ https://github.com/aixcoin/aixcoin/pull/6312
 
 Credit goes to Gregory Maxwell for providing a succinct and clear description of the behavior of this change, which became the basis of this BIP text.
 
-This BIP was edited by BtcDrak, Nicolas Dorier and kinoshitajona.
+This BIP was edited by AixDrak, Nicolas Dorier and kinoshitajona.
 
 ==Deployment==
 

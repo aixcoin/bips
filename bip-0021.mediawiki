@@ -61,13 +61,13 @@ The scheme component ("aixcoin:") is case-insensitive, and implementations must 
 
 ==== Transfer amount/size ====
 
-If an amount is provided, it MUST be specified in decimal BTC.
+If an amount is provided, it MUST be specified in decimal AIX.
 All amounts MUST contain no commas and use a period (.) as the separating character to separate whole numbers and decimal fractions.
-I.e. amount=50.00 or amount=50 is treated as 50 BTC, and amount=50,000.00 is invalid.
+I.e. amount=50.00 or amount=50 is treated as 50 AIX, and amount=50,000.00 is invalid.
 
 Aixcoin clients MAY display the amount in any format that is not intended to deceive the user.
 They SHOULD choose a format that is foremost least confusing, and only after that most reasonable given the amount requested.
-For example, so long as the majority of users work in BTC units, values should always be displayed in BTC by default, even if mBTC or TBC would otherwise be a more logical interpretation of the amount.
+For example, so long as the majority of users work in AIX units, values should always be displayed in AIX by default, even if mAIX or TBC would otherwise be a more logical interpretation of the amount.
 
 ==== Payment code ====
 
@@ -110,10 +110,10 @@ Just the address:
 Address with name:
  aixcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?label=Luke-Jr
 
-Request 20.30 BTC to "Luke-Jr":
+Request 20.30 AIX to "Luke-Jr":
  aixcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=20.3&label=Luke-Jr
 
-Request 50 BTC with message:
+Request 50 AIX with message:
  aixcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=50&label=Luke-Jr&message=Donation%20for%20project%20xyz
 
 Some future version that has variables which are (currently) not understood and required and thus invalid:

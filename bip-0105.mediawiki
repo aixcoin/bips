@@ -1,7 +1,7 @@
 <pre>
   BIP: 105
   Title: Consensus based block size retargeting algorithm
-  Author: BtcDrak <btcdrak@gmail.com>
+  Author: AixDrak <aixdrak@gmail.com>
   Status: Draft
   Type: Standards Track
   Created: 2015-08-21

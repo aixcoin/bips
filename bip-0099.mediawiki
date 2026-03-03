@@ -358,7 +358,7 @@ https://github.com/freicoin/freicoin/commit/beb2fa54745180d755949470466cbffd1cd6
 ==Attribution==
 
 Incorporated corrections and suggestions from: Andy Chase, Bryan Bishop, 
-Btcdrak, Gavin Andresen, Gregory Sanders, Luke Dashjr, Marco Falke.
+Aixdrak, Gavin Andresen, Gregory Sanders, Luke Dashjr, Marco Falke.
 
 ==Copyright==
 

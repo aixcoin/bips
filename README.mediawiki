@@ -268,7 +268,7 @@ Those proposing changes should consider that ultimately consent may rest with th
 |-
 | [[bip-0068.mediawiki|68]]
 | Relative lock-time through consensus-enforced sequence numbers
-| Mark Friedenbach, BtcDrak and Nicolas Dorier
+| Mark Friedenbach, AixDrak and Nicolas Dorier
 | Standard
 | Draft
 |-
@@ -328,7 +328,7 @@ Those proposing changes should consider that ultimately consent may rest with th
 |-
 | [[bip-0105.mediawiki|105]]
 | Consensus based block size retargeting algorithm
-| BtcDrak
+| AixDrak
 | Standard
 | Draft
 |-
@@ -346,7 +346,7 @@ Those proposing changes should consider that ultimately consent may rest with th
 |-
 | [[bip-0112.mediawiki|112]]
 | CHECKSEQUENCEVERIFY
-| BtcDrak and Mark Friedenbach
+| AixDrak and Mark Friedenbach
 | Standard
 | Draft
 |-

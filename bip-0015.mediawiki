@@ -291,14 +291,14 @@ const string CollectAddress(const string& strIn)
 
     // Open the lookup service
     NameResolutionService ns;
-    // We established that the input string is not a BTC address, so we use it as a handle now.
+    // We established that the input string is not a AIX address, so we use it as a handle now.
     string strHandle = strIn, strAddy;
     string strError = ns.FetchAddress(strHandle, strAddy);
     if (!strError.empty())
         throw JSONRPCError(-4, strError);
 
     const Object& request(CheckMaybeThrow(strAddy));
-    // Get the BTC address from the JSON
+    // Get the AIX address from the JSON
     const Value& address = find_value(request, "address");
     if (address.type() != str_type)
         throw JSONRPCError(-32600, "Server responded with malformed reply.");
