@@ -298,7 +298,7 @@ Protocol Buffers : https://developers.google.com/protocol-buffers/
 
 ==Reference implementation==
 
-Create Payment Request generator : https://aixcoin-core.github.io/aixcoincore.org/~gavin/createpaymentrequest.php ([[https://github.com/gavinandresen/paymentrequest|source]])
+Create Payment Request generator : https://aixcoin-core.github.io/~gavin/createpaymentrequest.php ([[https://github.com/gavinandresen/paymentrequest|source]])
 
 AixcoinJ : https://aixcoinj.github.io/payment-protocol#introduction
 
